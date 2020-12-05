@@ -19,8 +19,11 @@ a {
   color: var(--primary-color);
 }
 
+
 /* end of CSS varable */
 body {
+  padding: 10px;
+  margin: 60px;
   font-family: Chelsea Market, sans-serif;
   font-weight: var(--font-weight-small);
   font-size: 16px;
@@ -53,6 +56,12 @@ a:active { color: var(--button-active-green); }
 * {
   box-sizing: border-box;
 }
+
+.container {width:960px;
+      margin:0 auto;
+      padding:10px 25px;
+      border:1px solid #ccc;
+      background:#fff; }
 
 .page-header {
   display: flex;

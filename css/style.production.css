@@ -18,7 +18,9 @@ a {
   color: #357b70;
 }
 /*end of CSS varable*/
-body{font-family: Chelsea Market, sans-serif;
+body{
+    padding: 10px;
+    font-family: Chelsea Market, sans-serif;
     font-weight: var(--font-weight-small);
     font-size: 16px;
     line-height: 1.6;
