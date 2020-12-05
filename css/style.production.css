@@ -33,6 +33,24 @@ body{
   justify-content: center;
 }
 
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 15px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h1 {font-size: 30px;
     font-weight: var(--font-weight-large);}
 h2 {font-size: 24px;
@@ -118,6 +136,7 @@ button:focus,
 .button:focus {
   /*lets the mouse appear as a hand when cursor hovers over button */
   cursor: pointer;
+  color: #edc655;
   /* reduces the opacity to 80% */
   opacity: 0,8;
 }
