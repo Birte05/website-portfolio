@@ -8,7 +8,7 @@
   --lightgrey: #b2babb;
   --white: #fdfefe;
   --link-blue: #191970;
-  --button-active-green: #489c79;
+  --button-sun-yellow: #edc655;
   --font-weight-large: 700;
   --font-weight-small: 400;
   --max-width-large: 700px;
@@ -19,12 +19,20 @@ a {
 }
 /*end of CSS varable*/
 body{
-    padding: 10px;
+    padding: 10px 40px;
+    margin: 40px; 
     font-family: Chelsea Market, sans-serif;
     font-weight: var(--font-weight-small);
     font-size: 16px;
     line-height: 1.6;
   }
+
+.flex-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
 h1 {font-size: 30px;
     font-weight: var(--font-weight-large);}
 h2 {font-size: 24px;
@@ -35,10 +43,17 @@ a{color: var(--link-blue)}
 a:hover, a:focus {/*no underlining when hovering over a link*/
         text-decoration:none}
 a:visited{/*visited link*/color: var(--primary-color);}
-a:active{color: var(--button-active-green)}
+a:active{color: var(--button-sun-yellow)}
 * {
   box-sizing: border-box;
 }
+
+/* .container {width:960px;
+  margin:0 auto;
+  padding:10px 25px;
+  border:1px solid #ccc;
+  background:#fff; } */
+
 .page-header {
   display: flex;
   width: 100%;
@@ -128,8 +143,10 @@ button:focus,
 /*self-written code*/
 .about-profile {
   max-width: var(--max-width-large);
-  margin: 0 auto;
+  display: block;
+  margin: auto;
 }
+
 .contact-profile {
   max-width: var(--max-width-large);
   margin: 0 auto;
@@ -141,6 +158,14 @@ button:focus,
   flex-direction: column;
   text-align: center;
 }
+
+.berlin-illustration {
+  clear: both;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
 /* grid fallback for older browsers that do not read CSS grid*/
 .grid__item {
   display: inline-block;
