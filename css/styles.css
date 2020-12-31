@@ -169,21 +169,47 @@ button:focus,
 }
 
 /* CSS grid for newer browsers */
+.grid__item {
+  background-color: var(--grid-bg-color);
+  padding: 10px;
+
+  /* Set width to auto*/
+  width: auto;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
 
-.grid__item {
-  background-color: var(--lightgreen);
-  width: auto;
-  padding: 10px;
+.grid__item--centered {
+  text-align: center;
 }
 
-.grid-item:last-child {
-  grid-column: 2/2;
-  grid-row: 1/32;
+/* -- Grid links -- */
+
+.grid__item a {
+  color: var(--grid-link);
+}
+
+.grid__item a:visited {
+
+  /* visited link */
+  color: var(--grid-link--visited);
+}
+
+.grid__item a:hover, .grid__item a:focus {
+
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+  color: var(--grid-link--hover);
+}
+
+.grid__item a:active {
+
+  /* selected link */
+  color: var(--grid-link--active);
 }
 
 @media all and (max-width: 750px) {
