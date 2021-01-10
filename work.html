@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>Work.html</title>
-  <link rel="shortcut icon" href="img/erblotse-signet.png">
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
@@ -14,7 +13,6 @@
 <body>
   <!-- Header including the logo and the main navigation -->
   <header class="page-header">
-    <img src="img/erblotse-logo-vertical.svg" alt="Erblotse-logo depicting a tower" class="page-header__item">
     <nav class="main-navigation page-header__item">
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
@@ -34,84 +32,95 @@
   </header>
   <!-- Main Content -->
   <section>
-    <h1 class="header__title">Work</h1>
+    <h1>Work</h1>
     <div class="grid">
+      <!-- Grid items will live here -->
       <div class="grid__item">
-        <h2>MyFlix Database</h2>
-        <div class="grid__item--centered">
-          <img src="img/soflix.png" alt="SoFlix App snapshot">
+        <h3>My Flix Database</h3>
+        <div class="floated_img">
+          <img src="img/MyFlix.png" width="450" height="300" alt="SoFlix App snapshot">
+          <p>Description of above image</p>
         </div>
-        <p>
-          A react app that displays a list of movies. Users can signup, view and
+        <p> A react app that displays a list of movies. Users can signup, view and
           update the list of movies with description, director and genre.
-          The language, tools and frameworks used were Java Script, React, node.js, MongoDB and Heroku.
-        </p>
+          The language, tools and frameworks used were Java Script, React, node.js, MongoDB and Heroku.</p>
+        <br>
         <a href="https://my-flix-berlin.herokuapp.com/client/" target=_blank>My Flix Webapp</a>
         <br>
         <a href="https://github.com/Birte05/my-flix" target="_blank">See project on GitHub</a>
         <br />
       </div>
       <div class="grid__item">
-        <h2>Quizz App</h2>
+        <h3>Quizz Apps</h3>
         <div class="grid__item--centered">
-          <img src="img/react-simple-meetup.png" alt="React Simple Meetup App snapshot">
+          <img src="img/QuizzApp.png" width="450" height="300" alt="React Simple Meetup App snapshot">
         </div>
-        <p>
-          A quizz app offering two different quizzes.
-          The framework used was Angular.
-        </p>
+        <p>A quizz app offering two different quizzes.
+          The framework used was Angular.</p>
+        <br>
         <a href="https://birte05.github.io/quiz-app/" target="_blank">Quizz App</a>
         <br />
         <a href="https://github.com/Birte05/quiz-app" target="_blank">See project on GutHub</a>
       </div>
       <div class="grid__item">
-        <h2>Wonderlist</h2>
+        <h3>Wonderlist</h3>
         <div class="grid__item--centered">
-          <img src="img/my-awesome-quiz-app.png" width="150px" alt="My Awesome Quiz App snapshot">
+          <img src="img/Wonderlist.png" width="450" height="300" alt="My Awesome Quiz App snapshot">
         </div>
-        <p>
-          A checklist built with vue.js that allows you to add, edit, check complete and delete a list of tasks.
+        <p>A checklist built with vue.js that allows you to add, edit, check complete and delete a list of tasks.
         </p>
+        <br>
         <a href="https://birte05.github.io/wonderlist/" target="_blank">Wonderlist App</a>
         <br />
         <a href="https://birte05.github.io/wonderlist/" target="_blank">See project on Github</a>
       </div>
       <div class="grid__item">
-        <h2>Meet App</h2>
+        <h3>Meet App</h3>
         <div class="grid__item--centered">
-          <img src="img/vue-todo.png" width="150px" alt="Vue Todo App snapshot">
+          <img src="img/MeetApp.png" width="450" height="300" alt="Vue Todo App snapshot">
         </div>
-        <p>
-          Based on a test-driven development approach (unit tests, integration test and acceptance tests)
+        <p>Based on a test-driven development approach (unit tests, integration test and acceptance tests)
           this app was build with React. It lists events in cities around the world, shows, which genres
           are represented and allows you to see details related to the events.
         </p>
-
+        <br>
         <a href="https://birte05.github.io/meet/" target="_blank">Meet App</a>
         <br />
         <a href="https://github.com/Birte05/meet" target="_blank">See project on Github</a>
       </div>
-    </div>
+      <div class="grid__item">
+        <h3>Chat App</h3>
+        <div class="grid__item--centered">
+          <img src="img/Hello_World.png" style="display: inline-block; height: 300px; vertical-align: middle" alt="Chat App
+            snapshot">
+        </div>
+        <p>Build an a react native system this app allows users to chat, exchange pictures and send locations. It is
+          based on the Firebase Cloud and hosted with the Expo SDK. During the development process it was tested with
+          Metro Bundle and the Android Studio's emulators.
+        </p>
+        <br />
+        <a href="https://github.com/Birte05/hello-world" target="_blank">See project on Github</a>
+      </div>
+      <div class="grid__item">
+        <p>more to come...</p>
+      </div>
   </section>
-
-  <!-- ============================== -->
-
-  <div class="flex-box">
-    <h3>Your Project</h3>
-    <p>How can I help advance your project?</p>
-    <a href="mailto:birte.gall@asgaro.de">Send me an e-mail</a>
-  </div>
 
   <script src="js/tota11y.min.js"></script>
   <!-- Footer with links to social media profiles -->
   <footer class="page-footer">
+    <div>
+      <h3>Your Project</h3>
+      <p>How can I help advance your project?</p>
+      <a href="mailto:birte.gall@asgaro.de">Send me an e-mail</a>
+    </div>
     <p>
       Find me on
     </p>
     <div class="social-media">
-      <img src="img/twitter.svg" alt="Twitter">
-      <img src="img/github.svg" alt="GitHub'">
-      <img src="img/linkedin.svg" alt="LinkedIn">
+      <a href="https://twitter.com/Birte_Gall" target=_blank><img src="img/twitter.svg" alt="Twitter"></a>
+      <a href="https://github.com/Birte05" target=_blank><img src="img/github.svg" alt="Github"></a>
+      <a href="https://www.linkedin.com/in/birtegall/ target=_blank"><img src="img/linkedin.svg" alt="LinkedIn"></a>
     </div>
   </footer>
 </body>

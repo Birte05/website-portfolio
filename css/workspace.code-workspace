@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "website-portfolio",
+			"path": "../../../../../Workspace/CareerFoundry/website-portfolio"
+		}
+	],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "website portfolio"
+  }
+}
