@@ -14,24 +14,45 @@
   --max-width-large: 700px;
 }
 /* This sets up a CSS variable*/
+
+* {
+  box-sizing: border-box;
+}
+
 a {
   color: #357b70;
 }
 /*end of CSS varable*/
 body{
     padding: 10px 40px;
-    margin: 40px; 
+    margin: 40px;
     font-family: Chelsea Market, sans-serif;
     font-weight: var(--font-weight-small);
     font-size: 16px;
     line-height: 1.6;
   }
 
-.flex-container {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .div.bottom {
+    position: absolute;
+    bottom: 10px;
+  }
 
 table, th, td {
   border: 1px solid black;
@@ -261,4 +282,63 @@ button:focus,
 }
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+
+/* new */
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+/* @media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+} */
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    border-radius: 25px;
+    max-width: 40%;
+    height: 600px;
+    border: 1px solid var(--dark-grey);
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 15px;
+    background: #ADD8E6;
+  }
+  .col-2 {
+    border-radius: 15px;
+    max-width: 40%;
+    height: 600px;
+    border: 1px solid var(--dark-grey);
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 15px;
+    background: #ADD8E6;
+  }
+  .col-3 {
+    border-radius: 15px;
+    max-width: 40%;
+    height: 600px;
+    border: 1px solid var(--dark-grey);
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 15px;
+    background: #ADD8E6;
+  }
+
+  .col-4 {
+    border-radius: 15px;
+    max-width: 40%;
+    height: 600px;
+    border: 1px solid var(--dark-grey);
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 15px;
+    background: #ADD8E6;
+  }
 }
