@@ -356,4 +356,10 @@ button:focus,
     height: 300px;
   }
 
+  .responsive_small{
+    width: auto;
+    max-width: auto;
+    height: 300px;
+  }
+
 }
