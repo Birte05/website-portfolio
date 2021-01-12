@@ -1,6 +1,7 @@
 :root {
   --primary-color: #357b70;
   --secondary-color: #e0b354;
+  --terciary-color: #0047ab;
   --dark-grey: #2b2b2b;
   --sun-yellow: #edc655;
   --sun-red: #f76414;
@@ -81,11 +82,8 @@ h3 {font-size: 18px;
 a{color: var(--link-blue)}
 a:hover, a:focus {/*no underlining when hovering over a link*/
         text-decoration:none}
-a:visited{/*visited link*/color: var(--primary-color);}
+a:visited{/*visited link*/color: var(--terciary-color);}
 a:active{color: var(--button-sun-yellow)}
-* {
-  box-sizing: border-box;
-}
 
 /* .container {width:960px;
   margin:0 auto;
