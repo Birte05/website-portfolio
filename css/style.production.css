@@ -296,6 +296,12 @@ button:focus,
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
+  border-radius: 25px;
+  height: 600px;
+  border: 1px solid var(--dark-grey);
+  padding: 15px;
+  margin: 15px;
+  background: #ADD8E6;
 }
 
 @media only screen and (min-width: 768px) {
@@ -336,9 +342,10 @@ button:focus,
     max-width: 40%;
     height: 600px;
     border: 1px solid var(--dark-grey);
-    padding: 15px;
+    padding: 250px 0 0 0;
     box-sizing: border-box;
     margin: 15px;
     background: #ADD8E6;
+    text-align: center;
   }
 }
